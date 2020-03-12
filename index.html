@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>login</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+  <style>
+    .container{
+      text-align: center;
+      float: left;
+      margin-left: 29%;
+      margin-top: 30px;
+    }
+    #btn{
+      float: left;
+      margin-left: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <div id="app">
+    <div class="container">
+      <form>
+        <!-- Grid row -->
+        <div class="form-row">
+          <!-- Default input -->
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Username</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Username" v-model="username">
+            {{ user }}
+          </div>
+        </div>
+        <div class="form-row">
+          <!-- Default input -->
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Password</label>
+            <input type="password" class="form-control" id="inputEmail4" placeholder="Password" v-model="password">
+            {{ user1 }}
+          </div>
+        </div>
+      </form>
+      <!-- Default form group -->
+      <button type="button" id="btn" class="btn btn-primary btn-rounded" @click="result()"> login </button>
+    </div>
+  </div>
+  <!-- Start your project here-->
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
